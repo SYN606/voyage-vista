@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="../../output.css">
+
+    <title>Voyage Vista - Destinations to Go</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="bg-gray-200 shadow shadow-gray-300 w-100 px-8 md:px-auto">
+        <div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
+            <!-- Logo -->
+            <div class="text-indigo-500 md:order-1 flex items-center">
+                <!-- Heroicon - Airplane -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M2.5 19.992a.707.707 0 01.708-.707l5.353.053L11.34 15H8.267a1 1 0 01-.928-1.371l3.631-9.34a.707.707 0 01.968-.422l6.252 3.126a1.5 1.5 0 01-.325 2.856l-5.052.894-3.73 5.347 7.18-.282c.391-.02.756.184.937.547l3.577 7.153a.707.707 0 01-.681 1.013H3.207a.707.707 0 01-.707-.707v-2.122z" />
+                </svg>
+                <span class="ml-2 text-xl font-bold">Voyage Vista</span>
+            </div>
+            <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
+                <ul class="flex font-semibold justify-between">
+                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="../index.html">Home</a>
+                    </li>
+                    <li class="md:px-4 md:py-2 text-indigo-500 hover:text-indigo-400"><a
+                            href="destinations/dest.html">Destinations</a>
+                    </li>
+                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="../gallery.html">Gallery</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="../contact.html">Contact</a></li>
+                    <li class="md:px-4 md:py-2 hover:text-indigo-400"><a href="../about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="order-2 md:order-3">
+                <a class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2"
+                    href="login.html">
+                    <!-- Heroicons - Login Solid -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd"
+                            d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+                            clip-rule="evenodd" />
+                    </svg>
+                    <span>Login</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <section class="bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h1 class="text-4xl font-bold">Explore the World</h1>
+            <p class="mt-4 text-lg">Discover the most breathtaking destinations across America, Asia, and Europe.</p>
+        </div>
+    </section>
+
+    <!-- Featured Continents -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Featured Continents</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- America -->
+                <div class="relative h-64 rounded-lg overflow-hidden shadow-lg bg-cover bg-center"
+                    style="background-image: url('https://images.pexels.com/photos/1412235/pexels-photo-1412235.jpeg')">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">America</h3>
+                    </div>
+                </div>
+                <!-- Asia -->
+                <div class="relative h-64 rounded-lg overflow-hidden shadow-lg bg-cover bg-center"
+                    style="background-image: url('https://images.pexels.com/photos/27629386/pexels-photo-27629386/free-photo-of-a-view-of-a-valley-with-rice-fields-and-mountains.jpeg')">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">Asia</h3>
+                    </div>
+                </div>
+                <!-- Europe -->
+                <div class="relative h-64 rounded-lg overflow-hidden shadow-lg bg-cover bg-center"
+                    style="background-image: url('https://images.pexels.com/photos/773471/pexels-photo-773471.jpeg')">
+                    <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                        <h3 class="text-white text-2xl font-bold">Europe</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Top Destinations -->
+    <section class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-10">Top Destinations</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Repeatable Destination Cards -->
+                <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg" alt="New York"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">New York</h3>
+                        <p class="text-sm text-gray-600">The city that never sleeps. Iconic landmarks, vibrant culture,
+                            and endless opportunities.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://images.pexels.com/photos/1446624/pexels-photo-1446624.jpeg" alt="Paris"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Paris</h3>
+                        <p class="text-sm text-gray-600">The city of love and lights. Experience world-class art,
+                            fashion, and cuisine.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://images.pexels.com/photos/2506923/pexels-photo-2506923.jpeg" alt="Tokyo"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Tokyo</h3>
+                        <p class="text-sm text-gray-600">A bustling metropolis blending ancient traditions with
+                            cutting-edge technology.</p>
+                    </div>
+                </div>
+                <div class="rounded-lg overflow-hidden shadow-lg bg-white">
+                    <img src="https://images.pexels.com/photos/2064827/pexels-photo-2064827.jpeg" alt="Rome"
+                        class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-bold mb-2">Rome</h3>
+                        <p class="text-sm text-gray-600">Step back in time and marvel at ancient architecture and
+                            history in every corner.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plan Your Next Adventure -->
+    <section class="py-16 bg-blue-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-4">Plan Your Next Adventure</h2>
+            <p class="text-lg mb-6">Your dream destination awaits. Start planning your trip today with Voyage Vista!</p>
+            <a href="../login.html"
+                class="bg-white text-blue-500 px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-gray-100 transition">Get
+                Started</a>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-white lg:grid lg:grid-cols-5">
+        <div class="relative block h-32 lg:col-span-2 lg:h-full">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1548&q=80"
+                alt="Travel" class="absolute inset-0 h-full w-full object-cover" />
+        </div>
+
+        <div class="px-4 py-16 sm:px-6 lg:col-span-3 lg:px-8">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2">
+                <div>
+                    <p>
+                        <span class="text-xs uppercase tracking-wide text-gray-500"> Call us </span>
+                        <a href="#" class="block text-2xl font-medium text-gray-900 hover:opacity-75 sm:text-3xl">
+                            +1-800-700-7689
+                        </a>
+                    </p>
+
+                    <ul class="mt-8 space-y-1 text-sm text-gray-700">
+                        <li>Monday to Friday: 9am - 7pm</li>
+                        <li>Weekend: 10am - 4pm</li>
+                    </ul>
+
+                    <ul class="mt-8 flex gap-6">
+                        <li>
+                            <a href="#" class="text-gray-700 transition hover:opacity-75" aria-label="Facebook">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <!-- Facebook SVG content -->
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 transition hover:opacity-75" aria-label="Instagram">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <!-- Instagram SVG content -->
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-700 transition hover:opacity-75" aria-label="Twitter">
+                                <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <!-- Twitter SVG content -->
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                    <div>
+                        <p class="font-medium text-gray-900">Travel Services</p>
+                        <ul class="mt-6 space-y-4 text-sm">
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Flight Booking </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Hotel Reservations </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Holiday Packages </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Travel Insurance </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Car Rentals </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p class="font-medium text-gray-900">Explore</p>
+                        <ul class="mt-6 space-y-4 text-sm">
+                            <li>
+                                <a href="../about.html" class="text-gray-700 transition hover:opacity-75"> About Us </a>
+                            </li>
+                            <li>
+                                <a href="dest.html" class="text-gray-700 transition hover:opacity-75">
+                                    Destinations </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-gray-700 transition hover:opacity-75"> Travel Blog </a>
+                            </li>
+                            <li>
+                                <a href="../contact.html" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 border-t border-gray-100 pt-12">
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <ul class="flex flex-wrap gap-4 text-xs">
+                        <li>
+                            <a href="../ToS_and_Privacy.html" class="text-gray-500 transition hover:opacity-75"> Terms of
+                                Service </a>
+                        </li>
+                        <li>
+                            <a href="../ToS_and_Privacy.html" class="text-gray-500 transition hover:opacity-75"> Privacy
+                                Policy </a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-gray-500 transition hover:opacity-75"> FAQs </a>
+                        </li>
+                    </ul>
+
+                    <p class="mt-8 text-xs text-gray-500 sm:mt-0">
+                        &copy; 2025. Voyage Vista Co. All rights reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
